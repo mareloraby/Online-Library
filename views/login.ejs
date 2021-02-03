@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <style>
+       
+        html,body
+        {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+        }
+
+        body{
+        background-image: url("background1.jpg");
+        background-color: black;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+        .cont {
+            position:relative;
+            left:600px;
+            top:50px;
+            color: white;
+        }
+        .container{
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+        }
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+
+    
+</head>
+
+<body>
+    <div class="container">
+        <h1  style="font-family: 'Lobster';    margin-top: 15px;
+        font-size: 339% "> Welcome</h1>
+    </div>
+    <div class="cont">
+        <form method="POST" method="GET" id ="form">
+            Username:<br>
+            <input type="text" id="name" name="username" placeholder="Username" required>
+            <br>
+            Password:<br>
+            <input type="password" id="password" name="password" placeholder='Password' required>
+            <br><br>
+
+            <div style="color:#ffeb00"> <%= Error %></div> 
+           
+            <input type="submit" value="Login" id="simple_click" class="btn btn-secondary">
+        </form>
+        <br>
+        
+        <a href="registration" style="color: #00e7ff"> I dont have an account </a>
+    </div>
+</body>
+
+
+    
+</html>
